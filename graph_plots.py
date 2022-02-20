@@ -30,6 +30,12 @@ plt.xlabel('CC')
 plt.ylabel('Frequency')
 plt.show()
 
+plt.hist(cars['Price'], edgecolor = 'white', bins = 5)
+plt.title('Histogram of Price')
+plt.xlabel('Price')
+plt.ylabel('Frequency')
+plt.show()
+
 #Bar plot
 fuel_count = pd.value_counts(cars['FuelType'].values, sort = True)
 plt.xlabel('Frequency')
